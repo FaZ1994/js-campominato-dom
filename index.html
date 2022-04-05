@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Campo Minato</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./img/logo.png" alt="" />
+          <h1>Campo Minato</h1>
+        </div>
+
+        <form id="form" class="form">
+          <label for="levels">Difficoltà</label>
+          <select name="levels" id="levels">
+            <option value="100">Easy</option>
+            <option value="81">Medium</option>
+            <option value="49">Hard</option>
+          </select>
+          <button type="button" id="generate">Play!</button>
+        </form>
+      </nav>
+    </header>
+
+    <div id="grid"></div>
+
+    <footer>
+      <span
+        >Made with pain by &nbsp;<a href="https://github.com/FaZ1994"
+          >FaZ</a
+        >
+      </span>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
