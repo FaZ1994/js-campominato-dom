@@ -59,6 +59,7 @@ function renderCells(columnsLength, rowIndex, bombs, state) {
         this.style.backgroundColor = "red";
         this.style.backgroundImage = "url(./img/bomb.png)";
         state.gameOver = true;
+        alert("hai perso!")
       } else {
         this.style.backgroundColor = "#6495ed";
        state.attempts = state.attempts +1;
@@ -110,15 +111,3 @@ function createBombs(cellsLength) {
   }
   return bombs;
 }
-
-// stampo le celle. se il numero stampato è contenuto in bombs[], piazzo una bomba nella cella
-
-//al click, se la casella contiene una bomba, mostro la bomba e cambio sfondo. fine gioco, sconfitta.
-
-//creo contatore tentativi: per ogni cella cliccata che non contiene una bomba, incremento di +1
-
-// creo variabile tentativi massimi con valore di cellsLength - 16 (numero di bombe)
-
-// se contatore tentativi == tentativi massimi, fine gioco, vittoria.
-
-//fine gioco: mostro il punteggio totalizzato (contatore tentativi)
