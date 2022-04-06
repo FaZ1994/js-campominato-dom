@@ -89,7 +89,7 @@ document.getElementById("generate").addEventListener("click", function () {
   renderGrid(cellsLength);
 });
 
-renderGrid(17);
+renderGrid(100);
 
 // WORK IN PROGRES //
 
